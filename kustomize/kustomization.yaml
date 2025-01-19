@@ -1,0 +1,7 @@
+apiVersion: Kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namePrefix: app-conversao
+resources:
+  - deployment.yaml
+commonLabels:
+  environment: dev
